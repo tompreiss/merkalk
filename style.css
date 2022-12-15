@@ -79,6 +79,19 @@ body {
     box-shadow 0.2s;
 }
 
+.mbtn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #e9edc9;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
 
 .numbers div:hover {
   background-color: #ccd5ae;
@@ -93,7 +106,7 @@ div.equal {
   border-radius: 5px;
   width: 17%;
   text-align: center;
-  padding: 124px 10px;
+  padding: 162px 10px;
   margin: 10px 6px 10px 0;
   vertical-align: top;
   cursor: pointer;
