@@ -143,3 +143,9 @@ div.equal:hover {
 div.equal:active {
   font-weight: bold;
 }
+
+.credits {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
