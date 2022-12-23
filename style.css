@@ -14,6 +14,16 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
+  color: black;
+}
+
+.icon {
+  background: url("icons/icon.png");
+  background-repeat: no-repeat;
+  height: 47px;
+  width: 48px;
+  display: inline-block;
+  position: relative;
 }
 
 .calculator {
@@ -79,7 +89,7 @@ body {
     box-shadow 0.2s;
 }
 
-.mbtn {
+#mBtn {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -92,6 +102,17 @@ body {
     box-shadow 0.2s;
 }
 
+.mMode {
+  background-color: #cc7c44;
+  color: black;
+}
+
+#mBtn:hover {
+  background-color: #ccd5ae;
+}
+#mMode:visited {
+  background-color: red;
+}
 
 .numbers div:hover {
   background-color: #ccd5ae;
@@ -111,7 +132,7 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #fff;
-  background-color: #fbc4ab; d4a373
+  background-color: #fbc4ab;
   transition: all 0.2s ease-in-out;
 }
 

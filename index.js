@@ -5,7 +5,16 @@ var input = document.getElementById("input"), // input/output button
   operator = document.querySelectorAll(".operators div"), // operator buttons
   result = document.getElementById("result"), // equal button
   clear = document.getElementById("clear"), // clear button
-  resultDisplayed = false; // flag to keep an eye on what output is displayed
+  resultDisplayed = false,
+  mBtn = document.getElementById("mBtn"),
+  mMode = false;
+
+// mFunction = false;
+
+mBtn.addEventListener("click", function (e) {
+  console.log("Button clicked!");
+  input.innerHTML = "42";
+});
 
 // adding click handlers to number buttons
 for (var i = 0; i < number.length; i++) {
@@ -129,3 +138,14 @@ result.addEventListener("click", function () {
 clear.addEventListener("click", function () {
   input.innerHTML = "";
 });
+
+// function toggleMbtn() {
+//   mBtn.document.body.style.backgroundColor = "white";
+//   console.log("Clicked");
+// }
+
+function toggleMbtn() {
+  // mBtn.style.backgroundColor = "purple";
+  const element = document.body;
+  element.classList.toggle("mMode");
+}
